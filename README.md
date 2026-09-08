@@ -27,6 +27,8 @@ Ensure the Synthesis for the target design is complete, and then open a terminal
 • For Innovus tool, a GUI opens, and the terminal also enters the Innovus command prompt, where the tool commands can be entered. 
 
 After importing the Design, Perform the following Physical Design stages:
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/9dd758a3-b4e7-4c17-84b6-0470c381dca3" />
+
 
 → Floor Planning 
 
@@ -44,6 +46,8 @@ o	First, load the netlist. You can browse for the file and select “Top cell : 
 •	Similarly, select your LEF files from the specified path.
 
 •	Once LEF Files are loaded, Next step is to create the power supply pins both VDD and VSS
+<img width="722" height="467" alt="image" src="https://github.com/user-attachments/assets/4c788c4b-2999-4bd4-bf43-efb0c5a70e8d" />
+
 
 •	In order to load the Liberty File and SDC, create delay corners and analysis view, select the “Create Analysis Configuration” option at the bottom.
 
@@ -68,20 +72,28 @@ In order to add any of the objects, make a right click on the corresponding labe
 Adding Liberty Files (slow.lib, fast.lib) under “Library Sets
 
 • add slow.lib with a label Slow or any identifier of your own.
+<img width="754" height="476" alt="image" src="https://github.com/user-attachments/assets/3e87e473-3645-4475-b35d-e08578ed2172" />
+
 
 ### Fig.1 Add slow Library set
 
 • add fast.lib with a label Fast or any identifier of your own.
+<img width="942" height="592" alt="image" src="https://github.com/user-attachments/assets/59555d2d-4e09-4819-a007-4de8a2dc453d" />
+
 
 ### Fig.2 Add fast Library set
 
 • Adding RC Corners can also be done in a similar process. The temperature value can be found under the corresponding liberty file. Also, cap table and RC Tech files can be added from Foundry where available.
 
 ### Fig.3 Add RC corner
+<img width="819" height="670" alt="image" src="https://github.com/user-attachments/assets/fead4f26-8178-4790-a187-345b1750aa4f" />
+
 
 • Delay Corners are formed by combining Library Sets with RC Corners.
 
 ### Fig.4 Add Delay corner Max_delay & Min_delay
+<img width="453" height="376" alt="image" src="https://github.com/user-attachments/assets/ad50b69f-6536-488d-aead-4b7aa68df20e" />
+
 
 • Similarly, SDC can be read under the MMMC Object of “Constraints”.
 
@@ -172,6 +184,8 @@ Under Connect Global Net Connects, we create two pins, one for VDD and one for V
 • After the Special Route is complete, all the Standard Cell Rows turn to the Color coded for Metal 1 
 
 ### Fig.10 Power plan 
+<img width="1920" height="1080" alt="Screenshot 2026-08-28 162030" src="https://github.com/user-attachments/assets/6502338c-9556-41c5-b25e-4f6475857fa2" />
+
 
 The complete Power Planning process makes sure Every Standard Cell receives enough power to operate smoothly.
 
@@ -184,9 +198,13 @@ The complete Power Planning process makes sure Every Standard Cell receives enou
 • All the Standard Cells and Pins are placed as per the communication between them, i.e., Two communicating Cells are placed as close as possible so that shorter Net lengths can be used for connections as Shorter Net Lengths enable Better Timing Results.
 
 ### Fig.11 Placement of standard Cells 
+<img width="1600" height="880" alt="image" src="https://github.com/user-attachments/assets/251de8bb-47dd-40a0-989b-2a1f10c9ded6" />
+
 
 • You can toggle the Layer Visibility from the list on the Right. The List of Layers available are shown on the right under “Layer” tab with colour coding.
 
 ## Result
+<img width="1600" height="897" alt="image" src="https://github.com/user-attachments/assets/ff1295f6-60b1-49d8-b67a-dda314d5bcb9" />
+
 
 Thus, the physical design stages up to placement for the 4-bit up-down counter were completed and verified.
